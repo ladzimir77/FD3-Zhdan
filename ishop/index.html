@@ -1,1 +1,36 @@
-sdfsdafsdfsdfsdfdssdaf
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" />
+  <title>Спорттовары</title>
+</head> 
+<body> 
+  <div id="container"></div> 
+      
+  <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+      
+  <script src="ishop.js"></script>
+  <link rel="stylesheet" type="text/css" href="ishop.css" />
+
+  <script>
+
+    
+    var sportGoods=[ 
+      {code:1,item:'мяч футбольный',count:22,price:30,url:'/img/fb.jpg'}, 
+      {code:2,item:'мяч баскетбольный',count:9,price:40,url:'/img/bb.jpg'},
+      {code:3,item:'мяч волейбольный',count:14,price:21,url:'/img/vb.jpg'},
+      {code:4,item:'мяч теннисный',count:37,price:5,url:'/img/tn.jpg'},
+      {code:5,item:'мяч бейсбольный',count:6,price:19,url:'/img/bbb.jpg'},
+      {code:6,item:'шайба хоккейная',count:18,price:12,url:'/img/hck.jpg'}, 
+    ];
+
+    ReactDOM.render(
+      React.createElement(iShop,{items:sportGoods}), 
+      document.getElementById('container') 
+    );
+
+  </script>
+
+</body> 
+</html>
